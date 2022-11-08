@@ -19,22 +19,24 @@ let generateBtn = document.querySelector("#generate");
 
 // This function will generate the password and return it to the correct password.
 function generatePassword() {
+  password = [];
   // Need to know how long the password is
   let passwordLength = prompt('How long is your password?');
+  if (passwordLength > 50 || passwordLength < 8) {
+    alert('You must choose a password between 8 and 50 characters.');
+    return null;
+  }
   // Need to know what type of characters they want in their password
   let hasNumbers = confirm('Do you want numbers?');
   let hasSpecial = confirm('Do you want special characters?');
   let hasLower = confirm('Do you want lower case characters?');
   let hasUpper = confirm('Do you want upper case characters?');
 
-  if (passwordLength < 50 || passwordLength > 8) {
-    alert('You must choose a password between 8 and 50 characters.');
-    generatePassword();
-  }
+
   // Based on the responses, call from chosen arrays.
   if (hasNumbers === false && hasSpecial === false && hasLower === false && hasUpper === false) {
     alert('You must choose at least one option.');
-    generatePassword();
+    return null;
   }
   if (hasNumbers === true) {
     allChoices = allChoices.concat(number);
@@ -88,7 +90,6 @@ function writePassword() {
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password.join('');
-
 }
 
 
