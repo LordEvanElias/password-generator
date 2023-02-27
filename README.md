@@ -1,15 +1,41 @@
-# Password Generator 9000
+# Password-Generator
 
-Password Generator 9000 is an alternate password generator to the ones on your iphone.
+  <img src="https://img.shields.io/badge/license-None-blue.svg">
+   
+  
+  # License 
+  
+  > This project is licensed under None;
+  
+  # Description
 
-## Usage
+> This is a simple password generator that generates a unique password based off user choices.
 
-Click the 'Generate Password' button, select a number between 8 and 50. Choose whether you would like to include capital letters, lower-case leters, and special symbols.
+# Table of Contents
 
-```
+- [Installaton](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Tests](#tests)
 
+- [License](#license)
 
+# Installation
 
-## Link to application
-https://lordevanelias.github.io/password-generator/
-```
+> Simply travel to https://lordevanelias.github.io/password-generator/
+
+# Usage
+
+> Click the "Generate Password Button" and a popup will ask how long you would like your password. Enter a length and click "OK." It will then ask if you would like numbers. Select "OK" for yes and "Cancel" for no. Follow the remaining prompts for special characters and capital letters. The options for yes and no remain the same.
+
+# Contribution
+
+> LordEvanElias
+
+# Tests
+
+> N/A
+
+# Questions
+
+## For more details, please contact me at elias_evan@yahoo.com
